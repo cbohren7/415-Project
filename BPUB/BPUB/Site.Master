@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" ClientIDMode="Static" CodeBehind="Site.master.cs" Inherits="BPUB.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>BPUB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="Content/Site.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    
+   <div class="container">
+    <form id="form2" runat="server" class="form-horizontal">
+      <header class="jumbotron" id="home">
+        <img src="Content/bpub_white.png" />
+    </header>
+ 
+        <nav class="navbar navbar-default" id="nav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" 
+                  data-toggle="collapse" data-target="#mainMenu">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="/Content/bpub_yellow.png"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                            Customer Support&nbsp;<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/CustomerSupport/ProductRegistration">Register products</a></li>
+                            <li><a href="/CustomerSupport/CustomerSurvey">Complete customer survey</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                            Technician Support&nbsp;<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/TechSupport/CustomerIncidentDisplay">Display customer incidents</a></li>
+                            <li><a href="/TechSupport/IncidentUpdate">Update incidents</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                            Administration&nbsp;<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/Administration/ProductMaintenance">Maintain products</a></li>
+                            <li><a href="/Administration/CustomerMaintenance">Maintain customers</a></li>
+                            <li><a href="/Administration/TechnicianMaintenance">Maintain technicians</a></li>
+                            <li><a href="/Administration/IncidentDisplay">Display incidents</a></li>
+                            <li><a href="/Administration/CustomerDisplay">Display customers</a></li>
+                            <li><a href="/Administration/TechnicianIncidentSummary">Display incidents by technician</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/ContactUs">Contact Us</a></li>
+               </ul>
+            </div>
+        </div>
+    </nav>
+       
+   
+        <main>
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </main>
+        <footer id="contactus">
+            To contact us, call us at 800-555-0400 or email us at
+            <asp:HyperLink ID="hlEmail" NavigateUrl="mailto:sportspro@sportsprosoftware.com" runat="server">sportspro@sportsprosoftware.com</asp:HyperLink>
+        </footer>
+    </form>
+       </div>
+</body>
+</html>
