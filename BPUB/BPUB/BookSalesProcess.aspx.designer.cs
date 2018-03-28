@@ -10,6 +10,6 @@
 namespace BPUB {
     
     
-    public partial class StudentMaintenanceConfirmation {
+    public partial class BookSalesProcess {
     }
 }
