@@ -20,7 +20,9 @@
         <div class="col-sm-8 form-group">
             <div class="col-sm-3">Student ID:</div>
             <div class="col-sm-5 form form-control">
-                <asp:TextBox ID="txtStudentId" runat="server"></asp:TextBox>
+                <asp:DropDownList ID="ddlStudentID" runat="server" DataSourceID="sdsStudentID" DataTextField="Email" DataValueField="StudentID"></asp:DropDownList>
+
+                <asp:SqlDataSource runat="server" ID="sdsStudentID" ConnectionString='<%$ ConnectionStrings:BPUBConnectionString %>' SelectCommand="SELECT [StudentID], [Email] FROM [Student] ORDER BY [Email]"></asp:SqlDataSource>
             </div>
         </div>
 
