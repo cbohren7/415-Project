@@ -11,5 +11,32 @@ namespace BPUB {
     
     
     public partial class StudentMaintenanceForm {
+        
+        /// <summary>
+        /// gvStudentMaintenance control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvStudentMaintenance;
+        
+        /// <summary>
+        /// sdsTest control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource sdsTest;
+        
+        /// <summary>
+        /// dvCustomerMaintenance control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DetailsView dvCustomerMaintenance;
     }
 }
