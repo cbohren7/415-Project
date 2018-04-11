@@ -1,6 +1,7 @@
 ﻿/* Move down content because we have a fixed navbar that is 50px tall */
 body {
     padding-bottom: 20px;
+    background-color:#444444
 }
 
 /* Wrapping element */
@@ -31,8 +32,14 @@ textarea {
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
-
-
+.col-centered{
+    float:none;
+    margin:0 auto;
+    
+}
+.content{
+    padding:30px;
+}
 #home {
     background-color: #fbb03b;
     color: white;
@@ -43,10 +50,14 @@ textarea {
     #home img {
         height: 70px;
     }
-
+   .maincontent {
+       background-color:white;
+   }
     #nav{
         background-color:#2c2b2b;
-       margin-top:8px;
+       margin-top:10px;
+       margin-bottom:10px;
+       border:none;
     }
         #nav a {
             color: white;

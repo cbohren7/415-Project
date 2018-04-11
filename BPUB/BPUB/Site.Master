@@ -16,14 +16,13 @@
 
     </asp:ContentPlaceHolder>
 </head>
-<body>
+<body style="background-color:#808080">
     
-   <div class="container">
-    <form id="form2" runat="server" class="form-horizontal">
+   <div class="container" >
       <header class="jumbotron" id="home">
         <img src="Content/bpub_white.png" />
     </header>
- 
+       
         <nav class="navbar navbar-default" id="nav">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -34,7 +33,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                </button>
-               <a class="navbar-brand" href="/Content/bpub_yellow.png"></a>
+             
             </div>
             <div class="collapse navbar-collapse" id="mainMenu">
                 <ul class="nav navbar-nav">
@@ -71,14 +70,16 @@
             </div>
         </div>
     </nav>
-       
-   
+    <form id="form2" runat="server" class="form-horizontal panel panel-default col-centered content">
+ 
         <main>
-            <div>
+            <div >
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                  
                 </asp:ContentPlaceHolder>
             </div>
         </main>
+         <br />
         <footer id="contactus">
             To contact us, call us at 800-555-0400 or email us at
             <asp:HyperLink ID="hlEmail" NavigateUrl="mailto:sportspro@sportsprosoftware.com" runat="server">sportspro@sportsprosoftware.com</asp:HyperLink>
