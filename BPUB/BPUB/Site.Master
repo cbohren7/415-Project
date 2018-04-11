@@ -16,9 +16,9 @@
 
     </asp:ContentPlaceHolder>
 </head>
-<body style="background-color:#808080">
+<body style="background-color:#383838">
     
-   <div class="container" >
+   <div class="container" id="bootstrap-overrides" >
       <header class="jumbotron" id="home">
         <img src="Content/bpub_white.png" />
     </header>
@@ -73,14 +73,14 @@
     <form id="form2" runat="server" class="form-horizontal panel panel-default col-centered content">
  
         <main>
-            <div >
+            <div>
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                   
                 </asp:ContentPlaceHolder>
             </div>
         </main>
          <br />
-        <footer id="contactus">
+        <footer class="highlight small">
             To contact us, call us at 800-555-0400 or email us at
             <asp:HyperLink ID="hlEmail" NavigateUrl="mailto:sportspro@sportsprosoftware.com" runat="server">sportspro@sportsprosoftware.com</asp:HyperLink>
         </footer>
