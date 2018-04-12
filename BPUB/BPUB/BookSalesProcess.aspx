@@ -21,9 +21,9 @@
         <div class="col-sm-8 form-group">
             <div class="col-sm-4">Student ID:</div>
 
-            <asp:DropDownList CssClass="col-sm-5 form-control" ID="ddlStudentID" runat="server" DataSourceID="sdsStudentID" DataTextField="Email" DataValueField="StudentID"></asp:DropDownList>
+            <asp:DropDownList CssClass="col-sm-5 form-control" ID="ddlStudentID" runat="server" DataSourceID="sdsStudentID" DataTextField="Name" DataValueField="StudentID"></asp:DropDownList>
 
-            <asp:SqlDataSource runat="server" ID="sdsStudentID" ConnectionString='<%$ ConnectionStrings:BPUBConnectionString %>' SelectCommand="SELECT [StudentID], [Email] FROM [Student] ORDER BY [Email]"></asp:SqlDataSource>
+            <asp:SqlDataSource runat="server" ID="sdsStudentID" ConnectionString='<%$ ConnectionStrings:BPUB_ConnectionString %>' SelectCommand="SELECT [StudentID], [FirstName] + ' ' + [LastName] as Name FROM [Student] ORDER BY [Name]"></asp:SqlDataSource>
 
         </div>
 
